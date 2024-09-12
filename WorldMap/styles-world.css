@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.map-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+svg {
+    width: 960px;
+    height: 500px;
+    display: block;
+}
+
+.sphere {
+    fill: #a6cee3;
+}
+
+.country {
+    stroke: #ffffff;
+    stroke-width: 0.5px;
+    transition: fill 0.3s ease;
+}
+
+.country:hover {
+    stroke-width: 1px;
+    stroke: #000000;
+    fill: #f39c12 !important;
+}
+
+.tooltip {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #ffffff;
+    text-shadow: 1px 1px 1px #000000, -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000;
+    pointer-events: none;
+}
+
+#country-info {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #2c3e50;
+}
