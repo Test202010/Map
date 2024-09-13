@@ -1,0 +1,82 @@
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#map-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+#info-container {
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+h1 {
+    margin: 0 0 15px 0;
+    font-size: 48px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#info-box {
+    color: #444;
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+#info-box .prefecture-name {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #e21010;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+.prefecture {
+    stroke: #fff;
+    stroke-width: 0.5px;
+    transition: fill 0.3s ease;
+}
+
+.prefecture:hover {
+    fill: #ff0000 !important;
+}
+
+.prefecture-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.prefecture-name {
+    font-size: 12px;
+    fill: #000;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
